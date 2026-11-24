@@ -1,0 +1,29 @@
+# CodeIgniter 4 Writable Files
+/writable/cache/*
+!/writable/cache/index.html
+!/writable/cache/.gitkeep
+/writable/logs/*
+!/writable/logs/index.html
+!/writable/logs/.gitkeep
+/writable/session/*
+!/writable/session/index.html
+!/writable/session/.gitkeep
+/writable/debugbar/*
+!/writable/debugbar/index.html
+!/writable/debugbar/.gitkeep
+
+# Temporary Uploads & Backups
+/public/tempup/*
+!/public/tempup/index.html
+!/public/tempup/.gitkeep
+/public/restore/*
+!/public/restore/index.html
+!/public/restore/.gitkeep
+/public/bcfile/*
+!/public/bcfile/index.html
+!/public/bcfile/.gitkeep
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+*.tmp
