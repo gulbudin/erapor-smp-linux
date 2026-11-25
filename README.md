@@ -44,14 +44,17 @@ Cukup clone repositori ini ke server Linux Anda dan jalankan skrip instalasi:
 # 1. Masuk sebagai root
 sudo su -
 
-# 2. Clone repositori ke direktori /var/www/eraporsmp
+# 2. Install Git (wajib untuk server baru yang belum ada git)
+apt update -y && apt install -y git
+
+# 3. Clone repositori ke direktori /var/www/eraporsmp
 git clone https://github.com/gulbudin/erapor-smp-linux.git /var/www/eraporsmp
 
-# 3. Masuk ke direktori dan beri izin eksekusi
+# 4. Masuk ke direktori dan beri izin eksekusi
 cd /var/www/eraporsmp
 chmod +x install_linux.sh
 
-# 4. Jalankan instalasi otomatis
+# 5. Jalankan instalasi otomatis
 bash install_linux.sh
 ```
 
