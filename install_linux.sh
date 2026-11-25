@@ -228,5 +228,8 @@ echo "  - Nginx       : $(systemctl is-active nginx 2>/dev/null || echo unknown)
 echo "  - PHP 8.2 FPM : $(systemctl is-active php8.2-fpm 2>/dev/null || echo unknown)"
 echo "  - PostgreSQL  : $(systemctl is-active postgresql 2>/dev/null || echo unknown)"
 echo ""
+echo "  Penghargaan & Terima Kasih Khusus kepada:"
+echo "  Bapak I Nyoman Pasek, S.Pd., M.Pd. (Pengembang e-Rapor Kemendikdasmen)"
+echo ""
 echo "  Aplikasi sekarang siap digunakan dan disinkronkan dengan Dapodik!"
 echo "=============================================================================="

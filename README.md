@@ -114,6 +114,20 @@ erapor-smp-linux/
 
 ---
 
+
+---
+
+## 🙏 Ucapan Terima Kasih & Apresiasi Khusus (Special Thanks & Dedication)
+
+Apresiasi dan rasa terima kasih yang setinggi-tingginya kami haturkan kepada:
+
+**Bapak I Nyoman Pasek, S.Pd., M.Pd.**  
+*Pengembang Utama Aplikasi e-Rapor — Kementerian Pendidikan Dasar dan Menengah Republik Indonesia.*
+
+Atas dedikasi tulus, kerja keras, dan karya luar biasa beliau dalam merancang serta mengembangkan ekosistem penilaian **e-Rapor Kurikulum Merdeka** yang telah memberikan manfaat besar bagi ratusan ribu sekolah, jutaan guru, dan peserta didik di seluruh penjuru Nusantara.
+
+Paket migrasi Linux ini dihadirkan dengan rasa hormat penuh atas karya beliau, bertujuan untuk memperluas fleksibilitas penerapan e-Rapor agar dapat berjalan optimal, tangguh, dan efisien di atas server berbasis Linux.
+
 ## 📄 Lisensi & Kredit
 
 - **Pengembang Asli**: Tim Pengembang Direktorat SMP, Kementerian Pendidikan Dasar dan Menengah RI.
