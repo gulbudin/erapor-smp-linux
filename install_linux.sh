@@ -213,7 +213,10 @@ echo "==========================================================================
 echo -e "${GREEN}  INSTALASI e-Rapor SMP Kurikulum Merdeka (Linux Server Edition) SELESAI DENGAN SUKSES!${NC}"
 echo "=============================================================================="
 echo ""
-echo "  URL e-Rapor   : http://$SERVER_IP:$WEB_PORT"
+echo "  URL Akses Lokal (LAN)  : http://$LOCAL_IP:$WEB_PORT"
+if [ -n "$PUBLIC_IP" ] && [ "$PUBLIC_IP" != "$LOCAL_IP" ]; then
+    echo "  URL Akses Publik/Inet  : http://$PUBLIC_IP:$WEB_PORT"
+fi
 echo "  Web Root      : $TARGET_DIR/public"
 echo "  Database      : $DB_NAME (PostgreSQL)"
 echo "  Port DB       : 5432"
