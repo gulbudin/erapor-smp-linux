@@ -36,39 +36,20 @@ Paket ini dirancang agar siap dipasang pada server baru (fresh install) baik ser
 
 ---
 
-## 🚀 Panduan Instalasi Cepat (Server Baru / Fresh Install)
+## 🚀 Panduan Instalasi Cepat (1x Copas Langsung Run)
 
-Cukup clone repositori ini ke server Linux Anda dan jalankan skrip instalasi:
+Pada server baru (fresh install), cukup **salin satu baris perintah ini** dan tempel di terminal:
 
 ```bash
-# 1. Masuk sebagai root
-sudo su -
-
-# 2. Install Git (wajib untuk server baru yang belum ada git)
-apt update -y && apt install -y git
-
-# 3. Clone repositori ke direktori /var/www/eraporsmp
-git clone https://github.com/gulbudin/erapor-smp-linux.git /var/www/eraporsmp
-
-# 4. Masuk ke direktori dan beri izin eksekusi
-cd /var/www/eraporsmp
-chmod +x install_linux.sh
-
-# 5. Jalankan instalasi otomatis
-bash install_linux.sh
+curl -sSL https://raw.githubusercontent.com/gulbudin/erapor-smp-linux/main/quick_install.sh | bash
 ```
 
-Skrip akan secara otomatis:
-- Memasang paket `nginx`, `postgresql`, `php8.2` dan modul lengkapnya.
-- Mengunduh dan mengonfigurasi modul resmi **ionCube Loader Linux 8.2**.
-- Membuat database `dbraporkemdikbud25` dan merestore skema template e-Rapor.
-- Mengonfigurasi Virtual Host Nginx pada Port **8534**.
-- Menyiapkan hak akses `www-data` dan folder `writable`.
+> **Atau alternatif (tanpa curl terlebih dahulu):**
+> ```bash
+> apt-get update -y && apt-get install -y git && rm -rf /var/www/eraporsmp && git clone https://github.com/gulbudin/erapor-smp-linux.git /var/www/eraporsmp && cd /var/www/eraporsmp && bash install_linux.sh
+> ```
 
-Setelah proses selesai, buka browser Anda dan akses:
-```
-http://IP-SERVER-ANDA:8534
-```
+Perintah di atas akan otomatis menginstal git/curl, mengunduh repositori, memasang PHP 8.2, ionCube Loader, PostgreSQL, merestore database template, dan menyalakan Nginx.
 
 ---
 
