@@ -41,7 +41,7 @@ Paket ini dirancang agar siap dipasang pada server baru (fresh install) baik ser
 Pada server baru (fresh install), cukup **salin satu baris perintah ini** dan tempel di terminal:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/gulbudin/erapor-smp-linux/main/quick_install.sh | bash
+apt-get update -y && apt-get install -y curl && curl -sSL https://raw.githubusercontent.com/gulbudin/erapor-smp-linux/main/quick_install.sh | bash
 ```
 
 > **Atau alternatif (tanpa curl terlebih dahulu):**
